@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.comments {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  max-width: 800px;
+  background: rgb(219, 239, 247);
+  box-shadow: 0px 0px 5px rgb(100, 102, 102);
+}
+.comments-list {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 80%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(218, 219, 219);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.comment-item__header-name h3 {
+  display: flex;
+  align-items: center;
+}
+.comment-item__header-date {
+  font-size: x-small;
+  margin-left: 5px;
+}
+.comment-item__body {
+  overflow: hidden;
+  padding: 10px;
+}
+.comment-item__btn {
+  width: 25px;
+  margin: 10px;
+  align-self: flex-end;
+  position: absolute;
+  fill: rgb(189, 35, 35)!important;
+}
+
+/* .comment-item__like{
+  align-self: flex-end;
+  z-index: 1;
+  margin-right: 8px;
+} */
+.like{
+  fill: rgb(87, 87, 92);
+}
+.disLike{
+  fill: rgb(230, 42, 42);
+}
+.comment-item__svg {
+  align-self: flex-end;
+  z-index: 1;
+  margin-right: 8px;
+}
+.comment-item__btn svg path {
+  fill: rgb(189, 35, 35)!important;
+}
+.comment-item__btn:hover {
+  /* background: rgba(94, 184, 236, 0.822); */
+}
+.comment-item__btn:active {
+  background: rgb(94, 184, 236);
+}
+
+.comments-input {
+  border-top: solid rgb(211, 226, 230);
+  margin: 30px;
+  bottom: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+.comments-input textarea {
+  overflow: auto;
+  resize: none;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.form-name {
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.form-date {
+  align-items: end;
+  width: 100px;
+  border-radius: 5px;
+  padding: 3px;
+  align-self: flex-end;
+}
+.form-addBtn {
+  align-self: flex-end;
+  width: 170px;
+  background: rgb(94, 184, 236);
+  color: aliceblue;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.form-addBtn:hover {
+  background: rgba(94, 184, 236, 0.822);
+}
+.form-addBtn:active {
+  background: rgb(94, 184, 236);
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+:focus::-webkit-textarea-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+:focus:-ms-textarea-placeholder {
+  color: transparent;
+}
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
